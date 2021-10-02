@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(250, 250, 165);
+    font-size: large;
+    max-width: 1200px;
+    margin: 2rem 6rem 2rem auto;
+}
+li{
+    list-style-type: none;
+}
+a{
+     color: rgb(35, 35, 36);
+     cursor: pointer;
+    text-decoration: none;
+    }
+    a:visited{
+        color: rgb(191, 156, 238);
+    }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

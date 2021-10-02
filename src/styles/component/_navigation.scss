@@ -1,0 +1,42 @@
+.navigation{
+    margin: 26px;
+    display: flex;
+    a{
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+    }
+    .active-nav{
+        &::after{
+            content: "";
+            width: 60px;
+            height: 5px;
+            background-color: chartreuse;
+            position: absolute;
+            bottom: 2px;
+            left: 14%;
+        }
+    }
+    .mode{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 75%;
+        font-size: large;
+        color: rgb(195, 137, 243);
+        cursor: pointer;
+    }
+    .recherche{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 36.5%;
+        height: 20px;
+        background-color: cadetblue;
+        border: 0;
+        position: absolute;
+        margin-top: 40px;
+
+
+    }
+}
