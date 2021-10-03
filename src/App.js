@@ -2,6 +2,7 @@ import Home from './pages/Home';
 import {BrowserRouter , Switch , Route} from "react-router-dom"
 import NotFound from './pages/NotFound';
 import About from './pages/About';
+import Country from './components/Country';
 function App() {
   return (
     <div >
@@ -9,7 +10,7 @@ function App() {
           <Switch >
                  <Route path="/" exact component={Home} />
                  <Route path="/about" exact component={About}/>
-                 <Route component={NotFound}/>
+                 <Route pathe="/countries/:name" children={<Country/>}/>
                  
           </Switch>
        </BrowserRouter>

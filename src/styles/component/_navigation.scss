@@ -23,20 +23,34 @@
         justify-content: space-between;
         padding-left: 75%;
         font-size: large;
-        color: rgb(195, 137, 243);
+        color: rgb(13, 13, 14);
         cursor: pointer;
+    }
+    .lune{
+        width: 30px;
+        height: 30px;
     }
     .recherche{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-left: 36.5%;
-        height: 20px;
-        background-color: cadetblue;
+        margin-left: 38%;
         border: 0;
         position: absolute;
         margin-top: 40px;
-
-
+    }
+    input{
+        background-color: transparent;
+        outline: none;
+        background-color: rgb(241, 241, 93);
+        border: none;
+        font-weight: bold;
+        font-family: inherit;
+        letter-spacing: 0.5px;
+        border-radius: 6px;
+        padding: 8px;
+    }
+    input::placeholder{
+        color: rgb(56, 52, 52);
     }
 }

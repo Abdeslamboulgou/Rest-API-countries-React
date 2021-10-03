@@ -4,16 +4,20 @@ body{
     max-width: 1200px;
     margin: 2rem 6rem 2rem auto;
 }
+body.dark-theme{
+    background-color: rgb(68, 68, 73);
+    color: rgb(238, 240, 240);
+}
 li{
     list-style-type: none;
 }
 a{
-     color: rgb(35, 35, 36);
+     color: rgb(103, 5, 122);
      cursor: pointer;
     text-decoration: none;
     }
     a:visited{
-        color: rgb(191, 156, 238);
+        color: rgb(27, 26, 27);
     }
 
 *{
