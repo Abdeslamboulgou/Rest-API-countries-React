@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 const Card = (props) => {
-
+     
     const country=props.country
     return (
              <li className="card-data">

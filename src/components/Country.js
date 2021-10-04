@@ -3,7 +3,7 @@ import { Link , useParams } from 'react-router-dom';
 const Country = () => {
     const [country , setCountry]=useState([])
     const {name} =useParams()
-    const apikey="e08c936c930cb6c45da3a2de05dc231e";
+    const apikey="137e5f685b94789a2118669779f94192";
 
     useEffect(() => {
             const fetchCountry= async () => {
@@ -14,6 +14,7 @@ const Country = () => {
             }
             fetchCountry()
     },[])
+    
     return (
         <div>
             
@@ -21,16 +22,14 @@ const Country = () => {
             <Link to="/" className="retour">
                 {`<< Retour`}
             </Link>
+    
                 {Object.keys(country).map((c) => {
-
-                    const {flag ,name,capital,region,topLevelDomain ,alpha2Code,alpha3Code,callingCodes, altSpellings}=c
-               return (
-                   <article key={c}>
-                         <div className="flag">
-                             <img src={flag} alt={name}/>
-                         </div>
+                              const [name,topLevelDomain,alpha2Code,alpha3Code,callingCodes,capital,altSpellings,region]=c
+                return (
+                   <article key={name}>
+                         
                          <div className="suite-country">
-                              <div> <h1>{name}</h1>
+                              <div> <h1 className="country_name">{name}</h1>
                                      <h5>Capital : <span>{capital}</span></h5>
                                      <h5>Region : <span>{region}</span></h5>
                                      <h5>top level domain : <span>{topLevelDomain}</span></h5>

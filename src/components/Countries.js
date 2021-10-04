@@ -2,7 +2,7 @@ import React, { useEffect, useState} from 'react';
 import Card from './Card';
 import axios from 'axios';
 const Countries = () => {
-    const apikey="e08c936c930cb6c45da3a2de05dc231e";
+    const apikey="137e5f685b94789a2118669779f94192";
     const [data , setData]=useState([])
     const [rangeValue , setRangeValue]=useState(40)
     const [selectRadio , setRadioSelected]=useState("")

@@ -1,12 +1,13 @@
 .navigation{
     margin: 26px;
     display: flex;
+    
     a{
         margin: 10px;
         padding: 10px;
         position: relative;
     }
-    .active-nav{
+    .active_nav{
         &::after{
             content: "";
             width: 60px;
@@ -17,6 +18,13 @@
             left: 14%;
         }
     }
+    .active_nav.dark-theme{
+        color: rgb(238, 240, 240);
+    }
+    #about.dark-theme{
+        color: rgb(238, 240, 240);
+    }
+
     .mode{
         display: flex;
         align-items: center;
@@ -53,4 +61,6 @@
     input::placeholder{
         color: rgb(56, 52, 52);
     }
+    
 }
+
